@@ -34,6 +34,8 @@ html, body {
 }
 
 .logoC{
+    position: relative;
+    top: 10px;
     text-align: center;
 }
 
@@ -168,6 +170,19 @@ footer {
 .footer {
     text-align: center;
 } 
+
+/* PAINEL */
+
+.loggout {
+    float: right;
+    position: relative;
+    bottom: 40px;
+}
+
+.loggout a {
+    text-decoration: none;
+    font-size: 25px;
+}
 
 
 @media screen and (max-width: 860px) {

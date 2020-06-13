@@ -23,7 +23,7 @@
                 <label>Name</label>
                     <input type="text" name="name">
                 <label>Senha</label>
-                    <input type="text" name="senha">
+                    <input type="text" name="password">
                 <input type="submit" name="action">
             </form>
         </div><!--cont-form-->

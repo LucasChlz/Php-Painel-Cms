@@ -15,14 +15,28 @@ class PainelController
     {
         if(!isset($_SESSION['login_painel']))
         {
-            include('app/views/painel/login.php');
+            header('Location: '.PATH.'/admin/login');
         }else{
+
+            if(isset($_GET['loggout']))
+            {
+                $this->painelModel->loggout();
+            }
+
             include('app/views/painel/painel.php');
         }
     }
 
-    public function login()
+    public function login($data)
     {
+        if(isset($_POST['action']))
+        {
+            $name = $_POST['name'];
+            $password = $_POST['password'];
+
+            $this->painelModel->login($name,$password);
+        }
+
         include('app/views/painel/login.php');
     }
 }
