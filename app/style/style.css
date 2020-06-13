@@ -24,6 +24,20 @@ html, body {
     float: left;
 }
 
+.logoC i {
+    font-size: 70px;
+}
+
+.logoC a {
+    text-decoration: none;
+    color: black;
+}
+
+.logoC{
+    text-align: center;
+}
+
+
 header ul {
     float: right;
 }
@@ -109,6 +123,40 @@ header {
     border: 1px solid black;
     flex: 1;
     overflow-y: auto;
+}
+
+/* LOGIN */
+
+.cont-form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    border: 1px solid white;
+    background: white;
+    padding: 50px 30px;
+}
+
+.cont-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form input[type=text] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form input[type=submit] {
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    border: 1px;
+    background: black;
 }
 
 footer {
