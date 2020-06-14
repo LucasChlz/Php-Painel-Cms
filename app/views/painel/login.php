@@ -24,7 +24,7 @@
                     <input type="text" name="name">
                 <label>Senha</label>
                     <input type="text" name="password">
-                <input type="submit" name="action">
+                <input type="submit" name="action" value="Sign In">
             </form>
         </div><!--cont-form-->
     </div><!--container-->
