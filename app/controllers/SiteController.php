@@ -13,6 +13,7 @@ class SiteController
 
     public function home($data)
     {
+        $infoWeb = $this->siteModel->listingInfo();
         include("app/views/home.php");
     }
 }

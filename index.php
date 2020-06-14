@@ -13,6 +13,7 @@ $router->get("/","SiteController:home");
 
 $router->group("/admin");
 $router->get("/","PainelController:home");
+$router->post("/","PainelController:home");
 $router->get("/login","PainelController:login");
 $router->post("/login","PainelController:login");
 

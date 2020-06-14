@@ -190,6 +190,12 @@ footer {
     padding: 20px;
 }
 
+textarea {
+    width: 100%;
+    resize: vertical;
+    height: 100px;
+}
+
 @media screen and (max-width: 860px) {
     .background {
         background-size: 100% 100%;

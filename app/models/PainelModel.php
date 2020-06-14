@@ -33,4 +33,21 @@ class PainelModel
         header('Location: '.PATH);
         die();
     }
+
+    public function editWeb($title_header,$header_icon,$text,$title_box,$box1_icon,$box1_text,$box2_icon,$box2_text,$box3_icon,$box3_text)
+    {
+        $sql = \App\Util\Sql::connect()->prepare("UPDATE `tb_configs` SET `title_header` = ?,`header_icon` = ?,`text` = ?,`title_box` = ?,`box1_icon` = ?,`box1_text` = ?,`box2_icon` = ?,`box2_text` = ?,`box3_icon` = ?,`box3_text` = ?");
+        if($sql->execute(array($title_header,$header_icon,$text,$title_box,$box1_icon,$box1_text,$box2_icon,$box2_text,$box3_icon,$box3_text)))
+        {
+            \App\Util\Util::alertJs("Sucessfully");
+        }
+    }
+
+    public function listing()
+    {
+        $sql = \App\Util\Sql::connect()->prepare("SELECT * FROM `tb_configs`");
+        $sql->execute();
+
+        return $sql->fetch();
+    }
 }
